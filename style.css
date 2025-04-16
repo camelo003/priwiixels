@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  display: block;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+#main {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  font-family: "mono";
+  font-size: 12px;
+}
+
+#left_column {
+  width: 400px;
+  height: 1000px;
+}
+
+#canva_container {
+  width: 400px;
+  height: 400px;
+}
+
+#color_selector {
+  width: 400px;
+  height: 300px;
+  background: grey;
+}
+
+#pixel_selector {
+  width: 400px;
+  height: 300px;
+  background: grey;
+}
+
+#right_column {
+  width: 600px;
+  height: 1000px;
+  background: pink;
+}
+
+#color_preview {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
