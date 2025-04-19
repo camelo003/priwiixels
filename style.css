@@ -1,52 +1,107 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("rect.svg");
+  background-repeat: repeat;
+  font-family: "mono";
 }
 canvas {
   display: block;
 }
 
+h6 {
+  font-size: 12px;
+  margin: 0px;
+  font-style: bold;
+  padding-left: 10px;
+  color: white;
+  border-style: solid;
+  border-color: red;
+  background-color: red
+}
+
+#header {
+  background-color: red;
+  color: white;
+  width: 1215;
+  overflow-x: clip;
+  white-space: nowrap;
+}
+
+#t {
+  background-color: red;
+  color: white;
+  width: 215;
+  overflow-x: clip;
+}
+
+#cycle {
+  white-space: nowrap;
+  clip-path: inset(10px, 20px, 30px, 40px);
+  animation: marquee 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0px); /* Começa da direita (fora da tela) */
+  }
+  100% {
+    transform: translateX(-173px); /* Move todo o conteúdo para a esquerda (fora da tela) */
+  }
+}
+
 .container {
-  border: 1px solid red;
+  border: 2px solid red;
+  box-shadow: 5px 5px black;
+  background-color: white;
+  margin: 8px
+}
+
+.highlight_red {
+  background-color: red;
+}
+
+.highlight_green {
+  background-color: green;
+}
+
+.highlight_blue {
+  background-color: blue;
 }
 
 #main {
-  width: 1000px;
-  height: 1000px;
+  height: 800px;
   display: flex;
   flex-direction: row;
-  font-family: "mono";
   font-size: 12px;
 }
 
 #left_column {
-  width: 400px;
-  height: 1000px;
 }
 
 #canva_container {
   width: 400px;
-  height: 400px;
+  height: 422px;
 }
 
 #color_selector {
   width: 400px;
-  height: 300px;
-  background: grey;
+  height: 239px;
 }
 
 #pixel_selector {
   width: 400px;
-  height: 300px;
-  background: grey;
+  height: 139px;
 }
 
 #right_column {
   width: 600px;
-  height: 1000px;
+  height: 800px;
   background: pink;
 }
 

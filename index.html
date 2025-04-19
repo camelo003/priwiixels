@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>PriWixels</title>
     <script src="p5.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
   </head>
   <body>
     <main>
-      <div id="main" class="container">
-        <div id="left_column" class="container">
-          <div id="canva_container" class="container"></div>
+      <div id="t" class="container">
+        <!-- <h2 id="temp" style="background-color: black; display: inline">• PriWixels_</h2> -->
+        <h2 id="cycle">• PriWixels • PriWixels • PriWixels • PriWixels • PriWixels • PriWixels • PriWixels</h2>
+      </div>
+      <div id="main">
+        <div id="left_column">
+          <div id="canva_container" class="container">
+            <h6>Pixels Grid</h6>
+          </div>
           <div id="color_selector" class="container">
-            <label id="color_hex">#000000</label>
-            <div id="color_preview"></div>
-            <div class="color_bar">
-              <label>Red</label>
-              <input type="range" id="slider_red" min="0" max="255" value="0">
-              <label id="red_label">0</label>
-            </div>
-            <div class="color_bar">
-              <label>Green</label>
-              <input type="range" id="slider_green" min="0" max="255" value="0">
-              <label id="green_label">0</label>
-            </div>
-            <div class="color_bar">
-              <label>Blue</label>
-              <input type="range" id="slider_blue" min="0" max="255" value="0">
-              <label id="blue_label">0</label>
+            <h6>Color Selector</h6>
+            <div style="padding: 10px">
+              <label id="color_hex">#000000</label>
+              <div id="color_preview"></div>
+              <div class="color_bar">
+                <label>Red</label>
+                <input type="range" id="slider_red" min="0" max="255" value="0">
+                <label id="red_label">0</label>
+              </div>
+              <div class="color_bar">
+                <label>Green</label>
+                <input type="range" id="slider_green" min="0" max="255" value="0">
+                <label id="green_label">0</label>
+              </div>
+              <div class="color_bar">
+                <label>Blue</label>
+                <input type="range" id="slider_blue" min="0" max="255" value="0">
+                <label id="blue_label">0</label>
+              </div>
             </div>
           </div>
           <div id="pixel_selector" class="container">
-            <label>Select pixel: </label>
-            <input type="checkbox" id="select_pixel">
-            <div id="column_selector">
-              <label>Column:</label>
-              <button type="button" id="col_minus">-</button>
-              <label id="selected_column">0</label>
-              <button type="button" id="col_plus">+</button>
-            </div>
-            <div id="row_selector">
-              <label>Row:</label>
-              <button type="button" id="row_minus">-</button>
-              <label id="selected_row">0</label>
-              <button type="button" id="row_plus">+</button>
+            <h6>Pixel Selector</h6>
+            <div style="padding: 10px">
+              <label>Select pixel: </label>
+              <input type="checkbox" id="select_pixel">
+              <div id="column_selector">
+                <label>Column:</label>
+                <button type="button" id="col_minus">-</button>
+                <label id="selected_column">0</label>
+                <button type="button" id="col_plus">+</button>
+              </div>
+              <div id="row_selector">
+                <label>Row:</label>
+                <button type="button" id="row_minus">-</button>
+                <label id="selected_row">0</label>
+                <button type="button" id="row_plus">+</button>
+              </div>
             </div>
           </div>
         </div>
         <div id="right_column" class="container">
+          <h1>Bits:</h1>
           <p id="bits">bits!</p>
+          <h1>Hex:</h1>
+          <p id="hexs">hex!</p>
         </div>
       </div>
     </main>
