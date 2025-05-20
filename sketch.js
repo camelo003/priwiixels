@@ -10,7 +10,7 @@ TODOs
   - [ ] fazer coluna (in|de)crementar quando linha loopar (e vice-versa) 
 */
 
-let canvasRef
+let canvasRef;
 
 let selectedColor;
 let setColorArr;
@@ -87,7 +87,7 @@ function setup() {
         updateBits();
         updateHexs();
       }
-    })
+    });
     slidersX[sliderStr] = actualSlider;
   }
   

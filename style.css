@@ -26,9 +26,9 @@ h6 {
 #header {
   background-color: red;
   color: white;
-  width: 1215;
-  overflow-x: clip;
-  white-space: nowrap;
+  width: 1020px;
+  overflow-x: hidden;
+  margin-top: 20px;
 }
 
 #t {
@@ -81,32 +81,109 @@ h6 {
   font-size: 12px;
 }
 
-#left_column {
-}
-
 #canva_container {
   width: 400px;
   height: 422px;
 }
 
 #color_selector {
-  width: 400px;
-  height: 239px;
+    width: 400px;
+    height: 239px;
+}
+
+#color_hex {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #555;
+}
+
+#color_preview {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    background-color: #000;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color_bar {
+    display: flex;
+    align-items: center;
+}
+
+.color_bar label {
+    width: 40px;
+    margin-right: 10px;
+    text-align: right;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.color_bar input[type="range"] {
+    flex-grow: 1;
+}
+
+.color_bar label[id$="_label"] {
+    width: 20px;
+    text-align: left;
+    color: #555;
+    font-size: 1.2em;
+    margin-left: 8px;
 }
 
 #pixel_selector {
-  width: 400px;
-  height: 139px;
+    width: 400px;
+    height: 139px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+#pixel_selector label {
+    font-size: 1.2em;
+}
+
+#select_pixel {
+    vertical-align: middle;
+}
+
+#column_selector, #row_selector {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#column_selector label, #row_selector label {
+    width: 60px;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+#column_selector button, #row_selector button {
+    padding: 2px 10px;
+    border: 3px solid #ccc;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+#column_selector button:hover, #row_selector button:hover {
+    background-color: #ff0000ff;
+}
+
+#selected_column, #selected_row {
+    width: 50px;
+    margin-left: 10px !important;
+    text-align: center !important;
 }
 
 #right_column {
   width: 600px;
   height: 800px;
   background: pink;
-}
-
-#color_preview {
-  width: 100px;
-  height: 100px;
-  background: black;
 }
